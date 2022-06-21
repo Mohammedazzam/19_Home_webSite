@@ -67,3 +67,142 @@ img {
     Resonsive end
   -------------- */
 /* Global Rules end */
+
+/* Component Start */
+.icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: var(--main-color);
+}
+
+.icon i {
+  line-height: 40px;
+  color: #fff;
+  font-size: 15px;
+}
+/* Component End */
+
+/* Header Start */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 0;
+  z-index: 1000;
+  border-bottom: 1px solid var(--text-black-300);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .container .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .container .logo p {
+  display: inline-block;
+  padding-top: 5px;
+  text-transform: uppercase;
+  color: var(--text-black-300);
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.header .container .logo p span {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.header .container .logo img {
+  width: fit-content;
+  height: 40px;
+  object-fit: contain;
+}
+
+.header .container .nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .container .nav-menu li {
+  margin: 0 15px;
+}
+
+.header .container .nav-menu li:not(:last-child) a {
+  color: var(--text-black-900);
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.header .container .nav-menu li:not(:last-child) a:hover {
+  color: var(--main-color);
+  border-bottom: 0.1rem solid var(--main-color);
+  padding-bottom: 0.5rem;
+}
+
+.header .container .nav-menu .phone {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header .container .nav-menu .phone .phone-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .container .nav-menu .phone .phone-details .icon i {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+.header .container .nav-menu .phone .phone-details p {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-black-900);
+  padding: 15px;
+  letter-spacing: 0.7px;
+}
+.header .container .nav-menu .phone a {
+  font-size: 13px;
+  text-decoration: underline;
+  color: var(--text-black-900);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.header .container .nav-menu .phone a:hover {
+  color: var(--main-color);
+}
+/* Header End */
